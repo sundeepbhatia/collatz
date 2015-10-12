@@ -1,0 +1,2 @@
+# collatz
+Studying Collatz Conjecture
