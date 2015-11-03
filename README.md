@@ -6,3 +6,10 @@ It is said to terminate at 1, since, it produces a cycle (4 2 1) after that.
 Needless to say all powers of 2 terminate very quickly.
 
 Collatz Conjecture is described in greater detail at https://en.wikipedia.org/wiki/Collatz_conjecture
+
+**Notes on Scala version**
+- Build using sbt (http://scala-sbt.org).
+- To see collatz sequence edit *main()* by setting
+```
+val dbg = true
+```
