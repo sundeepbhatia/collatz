@@ -17,7 +17,7 @@ class Collatz(val debug : Boolean = false) {
 
 object Collatz {
   def main(args : Array[String]) = {
-    val dbg = false
+    val dbg = if (args.isEmpty) false else args(0) == "debug"
     for (n <- 1 to 1024) {
       var collatz = new Collatz(dbg);
       print("C(" + n + ")")
