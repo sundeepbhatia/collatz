@@ -9,7 +9,24 @@ Collatz Conjecture is described in greater detail at https://en.wikipedia.org/wi
 
 **Notes on Scala version**
 - Build using sbt (http://scala-sbt.org).
-- To see collatz sequence edit *main()* by setting
+
+## Methods
+
 ```
-val dbg = true
+seq(n : Int) : List[Int]
 ```
+
+- stopping distance is seq(n).length
+- largest element is seq(n).max
+
+```
+main()
+```
+
+- To display stopping distance and max element for C(1) to C(1024)
+
+```
+main("debug")
+```
+
+- To display collatz sequence, stopping distance and max for C(1) to C(1024)
