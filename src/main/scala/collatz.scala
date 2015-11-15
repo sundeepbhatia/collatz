@@ -13,6 +13,14 @@ class Collatz(val debug : Boolean = false) {
       1 + stop(n/2)
     }
   }
+  def seq(n : Int) : List[Int] = {
+    if (n == 1) return List(1)
+    if (n % 2 == 1) {
+      List(n) ::: seq(3*n+1)
+    } else {
+      List(n) ::: seq(n/2)
+    }
+  }
 }
 
 object Collatz {
