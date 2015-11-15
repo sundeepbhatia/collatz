@@ -5,9 +5,7 @@ A Collatz Sequence for a natural number n, C(n), is a sequence whose next term i
 It is said to terminate at 1, since, it produces a cycle (4 2 1) after that.
 Needless to say all powers of 2 terminate very quickly.
 
-Collatz Conjecture is described in greater detail at https://en.wikipedia.org/wiki/Collatz_conjecture
-
-**Notes on Scala version**
+# Notes on Scala version
 - Build using sbt (http://scala-sbt.org).
 
 ## Methods
@@ -16,7 +14,7 @@ Collatz Conjecture is described in greater detail at https://en.wikipedia.org/wi
 seq(n : Int) : List[Int]
 ```
 
-- stopping distance is seq(n).length
+- stopping distance is seq(n).length - 1
 - largest element is seq(n).max
 
 ```
@@ -30,3 +28,8 @@ main("debug")
 ```
 
 - To display collatz sequence, stopping distance and max for C(1) to C(1024)
+
+# References
+
+- Visualization - see [xkcd](http://imgs.xkcd.com/comics/collatz_conjecture.png)
+- Wikipedia - see [collatz](https://en.wikipedia.org/wiki/Collatz_conjecture) 
